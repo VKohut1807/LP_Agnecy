@@ -22,19 +22,26 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-header, section, footer{
+.wrap{
     width: 1248px;
     margin: 0 auto;
 }
 
+.two_columns{
+    display: flex;
+    justify-content: space-between;
+}
+
 header{
+    z-index: 2;
     position: absolute;
     left: calc(50% - 624px);
+    top: 29px;
     height: 90px;
     background-color: $colDark;
-    margin-top: 30px;
 
     ul{
+        position: absolute;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -65,8 +72,6 @@ header{
 
 section{
     padding: 105px 16px;
-    display: flex;
-    justify-content: space-between;
 
     .block{
 
@@ -515,6 +520,14 @@ section{
     }
 }
 
+section:nth-child(2){
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 222px;
+    background-color: $colGrey;
+}
+
 section:nth-child(3){
     border-bottom: 2px solid $colGrey;
 }
@@ -530,15 +543,8 @@ section:nth-child(5){
     padding: 35px 16px;
 }
 
-.first_window{
-    width: 100%;
-    padding-top: 90px;
-    background-color: $colGrey;
-}
-
-.second_window{
+section:nth-child(6){
     color: $colWhite;
-    width: 100%;
     background: url("../img/office.jpg");
     background-position: center;
     display: flex;
@@ -548,18 +554,12 @@ section:nth-child(5){
     background-color: $colDark;
 }
 
-.third_window{
-    width: 100%;
-    background-color: $colDark;
-}
-
 footer{
-    display: flex;
-    justify-content: space-between;
     padding: 46px 0 30px 0;
     color: $colWhite;
     text-align: center;
-
+    background-color: $colDark;
+    width: 100%;
 
     .copyright{
         opacity: .5;
