@@ -60,7 +60,7 @@ header{
             }
         }
 
-        .active_li,
+        .header_active,
         li:hover,
         li:focus,
         li:active{
@@ -248,22 +248,28 @@ section{
         .product{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
 
             .product_item{
                 position: relative;
+                top: 0;
+                left: 0;
                 width: 295px;
                 height: 290px;
                 margin: 10px 0;
 
                 img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
+            }
+
+            .product_item:not(:nth-child(4n+1)){
+                margin-left: 22.67px;
             }
         }
     }
@@ -355,17 +361,18 @@ section{
                         line-height: 36px;
                         text-align: center;
                     }
-
-                    img:hover{
-                        opacity: 0.5;
-                    }
                 }
 
-                .name_person_active .name_person,
-                .team_person:hover
-                .name_person{
-                    display: block;
-                    background-color: rgba(0, 0, 0, 0.5);
+                .name_person_active{
+
+                    .name_person{
+                        display: block;
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
+
+                    img{
+                        opacity: 0.5;
+                    }
                 }
             }
         }
@@ -491,31 +498,38 @@ section{
         }
 
         .contact_info{
-            padding: 143px 0 0 78px;
-            width: 499px;
-            height: 342px;
+            position: absolute;
             background-color: $colDark;
+            right: 0;
+            width: 577px;
 
-            h6{
-                color: $colWhite;
-                font-size: 18px;
-                font-weight: bold;
-                text-transform: uppercase;
-                line-height: 1.8;
-                margin-bottom: 40px;
-            }
+            .contact_info_group{
 
-            li{
-                font-size: 16px;
-                line-height: 1.75;
-                margin-bottom: 28px;
-                opacity: .5;
+                width: 285px;
+                padding: 143px 143px 0 78px;
+                height: 342px;
 
-                a{
-                    color: $colGrey;
+                h6{
+                    color: $colWhite;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    line-height: 1.8;
+                    margin-bottom: 40px;
                 }
 
-            }          
+                li{
+                    font-size: 16px;
+                    line-height: 1.75;
+                    margin-bottom: 28px;
+                    opacity: .5;
+
+                    a{
+                        color: $colGrey;
+                    }
+
+                } 
+            }         
         }
     }
 }
@@ -565,7 +579,6 @@ footer{
         opacity: .5;
         line-height: 36px;
         font-size: 16px;
-        font-family: 'Open Sans', sans-serif;
         
         a{
             color: $colSpecial;
