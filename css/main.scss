@@ -548,7 +548,6 @@ section:nth-child(2){
 }
 
 section:nth-child(3){
-
     padding-bottom: 0;
 
     hr{
@@ -975,7 +974,348 @@ footer{
 // koef - 0,77(0/.5/1)
 
 .wrap{
-    width: 961px;
+    width: 960px;
 }
 
+    header{
+        left: calc(50% - 480px);
+        top: 22.5px;
+        height: 69.5px;
+
+        ul{
+            margin-left: 275px;
+
+            li{
+                padding: 25.5px 18.5px;
+                font-size: 11px;
+            }
+        }
+    }
+
+    section{
+        padding: 81px 12.5px;
+    
+        .block{
+    
+            h1{
+                width: 453px;
+                margin-bottom: 27.5px;
+                font-size: 46px;
+                letter-spacing: 7.5px;
+            }
+    
+            h2{
+                width: 386px;
+                margin-bottom: 40px;
+                font-size: 32.5px;
+            }
+    
+            p{
+                width: 399px;
+                margin-bottom: 43px;
+                font-size: 12.5px;
+            }
+    
+            button{
+                width: 175px;
+                height: 40px;
+                font-size: 14px;
+                border-radius: 4px;
+                border: 1.5px solid $colSpecial;
+                letter-spacing: 1.5px;
+            }
+    
+            .our_video {
+                box-shadow: 0px 11px 56px 0px rgba(0, 0, 0, 0.29);
+                margin-left: 82.5px;
+                width: 424.5px;
+                height: 274px;
+            }
+    
+            .block_grup{
+                margin-left: 61.5px;
+    
+                .block_element{
+                    margin-left: 18.5px;
+                    margin-bottom: 40px;
+    
+                    .element_icon{
+                        width: 34px;
+                        height: 25.5px;
+                        font-size: 29.5px;
+                        margin-bottom: 31px;
+                    }
+    
+                    h4{
+                        font-size: 18.5px;
+                        margin-bottom: 11.5px;
+                    }
+    
+                    p{
+                        max-width: 221px;
+                        font-size: 12.5px;
+                    }
+                }
+            }
+        }
+        
+        .block_with_line{
+    
+            h3{
+                font-size: 32.5px;
+                letter-spacing: 1.5px;
+                margin-bottom: 25.5px;
+            }
+    
+            p{
+                margin-bottom: 21.5px;
+                font-size: 12.5px;
+                width: 389px;
+            }
+    
+            hr{
+                height: 2.5px;
+                width: 101.5px;
+                margin: 0 0 54px 0;
+            }
+        }
+    
+        .with_line_center{
+    
+            h3{
+                margin-bottom: 25.5px;
+            }
+    
+            p{
+                margin-bottom: 21.5px;
+            }
+    
+            hr{
+                margin: 0 auto 66px auto;
+            }
+        }
+        
+        .block_photo{
+    
+            .products_photo{
+    
+                li{
+                    font-size: 17px;
+                    margin: 0 22.5px 51px 22.5px;
+                }
+            }
+    
+            .product{
+    
+                .product_item{
+                    width: 226px;
+                    height: 223.5px;
+                    margin: 7.5px 0;
+                }
+    
+                .product_item:not(:nth-child(4n+1)){
+                    margin-left: 17.5px;
+                }
+            }
+        }
+    
+        .our_team{
+    
+            .team_leader{
+                width: 247px;
+                height: 352.5px;
+            }
+    
+            .team{
+                margin-left: 56px;
+                
+                h5{
+                    font-size: 23px;
+                    margin-bottom: 25.5px;
+                }
+    
+                p{
+                    font-size: 12.5px;
+                    width: 493px;
+                    margin-bottom: 33px;
+                }
+    
+                .social_links{
+                    margin-bottom: 48.5px;
+                    
+                    ul{
+    
+                        li{
+                            font-size: 14px;
+                            margin-right: 23px;
+                        }
+                    }
+                }
+    
+                .team_photo{
+                    width: 654.5px;
+    
+                    .team_person{
+                        width: 151.5px;
+                        height: 161.5px;
+    
+                        .name_person{
+                            height: 27.5px;
+                            width: 151.5px;
+                            font-size: 14px;
+                            line-height: 27.5px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .subscribe{
+            padding: 27px 44.5px;
+    
+            h2{
+                font-size: 32.5px;
+                margin-bottom: 25.5px;
+            }
+    
+            p{
+                font-size: 12.5px;
+                margin-bottom: 46px;
+            }
+    
+            .subscribe_grup{
+    
+                input{
+                    height: 8.5px;
+                    width: 345.5px;
+                    border-radius: 4px;
+                    font-size: 12.5px;
+                    padding: 26px 27.5px;
+                    margin-right: 17px;
+                }
+    
+                button{
+                    width: 165px;
+                    height: 61px;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    border: 1.5px solid $colSpecial;
+                }
+            }       
+        }
+    
+        .block_contact{
+    
+            h3{
+                margin-bottom: 38.5px;
+            }
+    
+            p{
+                width: 563px;
+                margin-bottom: 40px;
+            }
+    
+            hr{
+                margin-bottom: 59.5px;
+            }
+        }
+    
+        .contact_form{
+    
+            form{
+                width: 563px;
+                margin-right: 81.5px;
+            
+                .contact_form_row{
+                    
+                    input{
+                        font-size: 12.5px;
+                        width: 182.5px;
+                        height: 11.5px;
+                        border-radius: 7.5px;
+                        margin-bottom: 35.5px;
+                        padding: 21px 39.5px;
+                    }
+                }
+    
+                textarea{
+                    height: 138px;
+                    width: 490.5px;
+                    font-size: 12.5px;
+                    border-radius: 7.5px;
+                    padding: 27px 36px;
+                    margin-bottom: 34.5px;
+                }
+    
+                button{
+                    font-size: 14px;
+                    border-radius: 4px;
+                    width: 560.5px;
+                    height: 54px;
+                }
+            }
+    
+            .contact_info{
+                width: 444.5px;
+    
+                .contact_info_group{
+    
+                    width: 219.5px;
+                    padding: 110px 110px 0 60px;
+                    height: 263.5px;
+    
+                    h6{
+                        font-size: 14px;
+                        margin-bottom: 31px;
+                    }
+    
+                    li{
+                        font-size: 12.5px;
+                        margin-bottom: 21.5px;
+                    } 
+                }         
+            }
+        }
+    }
+
+
+    section:nth-child(2){
+        padding-top: 171px;
+    }
+    
+    section:nth-child(3){
+    
+        hr{
+            height: 1.5px;
+            width: 960px;
+            margin: 81px auto 0 auto;
+        }
+    }
+    
+    section:nth-child(5){
+        padding: 27px 12.5px;
+    }
+    
+    footer{
+        padding: 35.5px 0 23px 0;
+    
+        .copyright{
+            line-height: 27px;
+            font-size: 12.5px;
+        }
+    
+        .grup_social{
+    
+            a{
+                margin-left: 14px;
+    
+                i{
+                    font-size: 14.5px;
+                    height: 25.5px;
+                    width: 25.5px;
+                    line-height: 25.5px;
+                }
+            }
+        }
+    }
 }
