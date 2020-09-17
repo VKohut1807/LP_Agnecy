@@ -94,11 +94,14 @@ section {
     background-color: #ff3f40;
     transition: 0.5s; }
   section .block .our_video {
-    background-color: #ff2222;
+    background-color: #ff3f40;
     box-shadow: 0px 14px 73px 0px rgba(0, 0, 0, 0.29);
     margin-left: 107px;
     width: 551px;
     height: 356px; }
+    section .block .our_video iframe {
+      width: 100%;
+      height: 100%; }
   section .block .block_grup {
     display: flex;
     justify-content: space-between;
@@ -378,7 +381,12 @@ section:nth-child(2) {
   background-color: #f6f2f1; }
 
 section:nth-child(3) {
-  border-bottom: 2px solid #f6f2f1; }
+  padding-bottom: 0; }
+  section:nth-child(3) hr {
+    height: 2px;
+    width: 1248px;
+    margin: 105px auto 0 auto;
+    background-color: #f6f2f1; }
 
 section:nth-child(4), section:nth-child(7) {
   display: flex;
@@ -425,5 +433,209 @@ footer {
         line-height: 33px;
         background-color: #f6f2f1;
         color: #312f30; }
+
+@media only screen and (min-device-width: 1920px) {
+  .wrap {
+    width: 1660px; }
+
+  header {
+    left: calc(50% - 830px);
+    top: 38.5px;
+    height: 119.5px; }
+    header ul {
+      margin-left: 475px; }
+      header ul li {
+        padding: 44.5px 32px;
+        font-size: 18.5px; }
+
+  section {
+    padding: 139.5px 21.5px; }
+    section .block h1 {
+      width: 782px;
+      margin-bottom: 48px;
+      font-size: 80px;
+      letter-spacing: 13.5px; }
+    section .block h2 {
+      width: 666.5px;
+      margin-bottom: 69px;
+      font-size: 56px; }
+    section .block p {
+      width: 689px;
+      margin-bottom: 74.5px;
+      font-size: 21.5px; }
+    section .block button {
+      width: 302px;
+      height: 69px;
+      font-size: 24px;
+      border-radius: 6.5px;
+      border: 2.5px solid #ff3f40;
+      letter-spacing: 2.5px; }
+    section .block .our_video {
+      box-shadow: 0px 18.5px 97px 0px rgba(0, 0, 0, 0.29);
+      margin-left: 142.5px;
+      width: 733px;
+      height: 473.5px; }
+    section .block .block_grup {
+      margin-left: 106.5px; }
+      section .block .block_grup .block_element {
+        margin-left: 32px;
+        margin-bottom: 69px; }
+        section .block .block_grup .block_element .element_icon {
+          color: #ff3f40;
+          width: 44px;
+          height: 33px;
+          font-size: 38px;
+          margin-bottom: 40px; }
+        section .block .block_grup .block_element h4 {
+          font-size: 32px;
+          margin-bottom: 20px; }
+        section .block .block_grup .block_element p {
+          max-width: 381.5px;
+          font-size: 21.5px; }
+    section .block_with_line h3 {
+      font-size: 56px;
+      letter-spacing: 2.5px;
+      margin-bottom: 44px; }
+    section .block_with_line p {
+      margin-bottom: 37px;
+      font-size: 21.5px;
+      width: 671.5px; }
+    section .block_with_line hr {
+      height: 4px;
+      width: 175.5px;
+      margin: 0 0 93px 0; }
+    section .with_line_center h3 {
+      margin-bottom: 44px; }
+    section .with_line_center p {
+      margin-bottom: 37px; }
+    section .with_line_center hr {
+      margin: 0 auto 114.5px auto; }
+    section .block_photo .products_photo li {
+      font-size: 29.5px;
+      margin: 0 38.5px 88px 38.5px; }
+    section .block_photo .product .product_item {
+      width: 392.5px;
+      height: 385.5px;
+      margin: 13.5px 0; }
+    section .block_photo .product .product_item:not(:nth-child(4n+1)) {
+      margin-left: 30px; }
+    section .our_team .team_leader {
+      width: 427px;
+      height: 609px; }
+    section .our_team .team {
+      margin-left: 97px; }
+      section .our_team .team h5 {
+        font-size: 40px;
+        margin-bottom: 44px; }
+      section .our_team .team p {
+        font-size: 21.5px;
+        width: 851px;
+        margin-bottom: 57px; }
+      section .our_team .team .social_links {
+        margin-bottom: 84px; }
+        section .our_team .team .social_links ul li {
+          font-size: 24px;
+          margin-right: 40px; }
+      section .our_team .team .team_photo {
+        width: 1130.5px; }
+        section .our_team .team .team_photo .team_person {
+          width: 262px;
+          height: 279.5px; }
+          section .our_team .team .team_photo .team_person .name_person {
+            height: 48px;
+            width: 262px;
+            font-size: 24px;
+            line-height: 48px; }
+    section .subscribe {
+      padding: 46.5px 77px; }
+      section .subscribe h2 {
+        font-size: 56px;
+        margin-bottom: 44px; }
+      section .subscribe p {
+        font-size: 21.5px;
+        margin-bottom: 80px; }
+      section .subscribe .subscribe_grup input {
+        height: 14.5px;
+        width: 597px;
+        border-radius: 6.5px;
+        font-size: 21.5px;
+        padding: 45px 48px;
+        margin-right: 29.5px; }
+      section .subscribe .subscribe_grup button {
+        width: 284.5px;
+        height: 105px;
+        font-size: 24px;
+        letter-spacing: 1.5px;
+        border-radius: 6.5px;
+        border: 2.5px solid #ff3f40; }
+    section .block_contact h3 {
+      margin-bottom: 66.5px; }
+    section .block_contact p {
+      width: 972px;
+      margin-bottom: 69px; }
+    section .block_contact hr {
+      margin-bottom: 102.5px; }
+    section .contact_form form {
+      width: 972px;
+      margin-right: 141px; }
+      section .contact_form form .contact_form_row input {
+        font-size: 21.5px;
+        width: 315px;
+        height: 20px;
+        border-radius: 13.5px;
+        margin-bottom: 61px;
+        padding: 36px 68px; }
+      section .contact_form form textarea {
+        height: 238px;
+        width: 847px;
+        font-size: 21.5px;
+        border-radius: 13.5px;
+        padding: 46.5px 62.5px;
+        margin-bottom: 60px; }
+      section .contact_form form button {
+        font-size: 24px;
+        border-radius: 6.5px;
+        width: 968px;
+        height: 93px;
+        letter-spacing: 1.5px; }
+    section .contact_form .contact_info {
+      width: 767.5px; }
+      section .contact_form .contact_info .contact_info_group {
+        width: 379px;
+        padding: 190px 190px 0 103.5px;
+        height: 452px; }
+        section .contact_form .contact_info .contact_info_group h6 {
+          font-size: 24px;
+          margin-bottom: 53px; }
+        section .contact_form .contact_info .contact_info_group li {
+          font-size: 21.5px;
+          margin-bottom: 37px; }
+
+  section:nth-child(2) {
+    padding-top: 295.5px; }
+
+  section:nth-child(3) hr {
+    height: 2.5px;
+    width: 1660px;
+    margin: 139.5px auto 0 auto; }
+
+  section:nth-child(5) {
+    padding: 46.5px 21.5px; }
+
+  footer {
+    padding: 61px 0 40px 0; }
+    footer .copyright {
+      line-height: 44px;
+      font-size: 21.5px; }
+    footer .grup_social a {
+      margin-left: 24px; }
+      footer .grup_social a i {
+        font-size: 25.5px;
+        height: 44px;
+        width: 44px;
+        line-height: 44px; } }
+@media only screen and (min-device-width: 1110px) and (max-device-width: 1439px) {
+  .wrap {
+    width: 961px; } }
 
 /*# sourceMappingURL=main.css.map */
