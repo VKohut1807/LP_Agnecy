@@ -636,6 +636,200 @@ footer {
         line-height: 44px; } }
 @media only screen and (min-device-width: 1110px) and (max-device-width: 1439px) {
   .wrap {
-    width: 961px; } }
+    width: 960px; }
+
+  header {
+    left: calc(50% - 480px);
+    top: 22.5px;
+    height: 69.5px; }
+    header ul {
+      margin-left: 275px; }
+      header ul li {
+        padding: 25.5px 18.5px;
+        font-size: 11px; }
+
+  section {
+    padding: 81px 12.5px; }
+    section .block h1 {
+      width: 453px;
+      margin-bottom: 27.5px;
+      font-size: 46px;
+      letter-spacing: 7.5px; }
+    section .block h2 {
+      width: 386px;
+      margin-bottom: 40px;
+      font-size: 32.5px; }
+    section .block p {
+      width: 399px;
+      margin-bottom: 43px;
+      font-size: 12.5px; }
+    section .block button {
+      width: 175px;
+      height: 40px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1.5px solid #ff3f40;
+      letter-spacing: 1.5px; }
+    section .block .our_video {
+      box-shadow: 0px 11px 56px 0px rgba(0, 0, 0, 0.29);
+      margin-left: 82.5px;
+      width: 424.5px;
+      height: 274px; }
+    section .block .block_grup {
+      margin-left: 61.5px; }
+      section .block .block_grup .block_element {
+        margin-left: 18.5px;
+        margin-bottom: 40px; }
+        section .block .block_grup .block_element .element_icon {
+          width: 34px;
+          height: 25.5px;
+          font-size: 29.5px;
+          margin-bottom: 31px; }
+        section .block .block_grup .block_element h4 {
+          font-size: 18.5px;
+          margin-bottom: 11.5px; }
+        section .block .block_grup .block_element p {
+          max-width: 221px;
+          font-size: 12.5px; }
+    section .block_with_line h3 {
+      font-size: 32.5px;
+      letter-spacing: 1.5px;
+      margin-bottom: 25.5px; }
+    section .block_with_line p {
+      margin-bottom: 21.5px;
+      font-size: 12.5px;
+      width: 389px; }
+    section .block_with_line hr {
+      height: 2.5px;
+      width: 101.5px;
+      margin: 0 0 54px 0; }
+    section .with_line_center h3 {
+      margin-bottom: 25.5px; }
+    section .with_line_center p {
+      margin-bottom: 21.5px; }
+    section .with_line_center hr {
+      margin: 0 auto 66px auto; }
+    section .block_photo .products_photo li {
+      font-size: 17px;
+      margin: 0 22.5px 51px 22.5px; }
+    section .block_photo .product .product_item {
+      width: 226px;
+      height: 223.5px;
+      margin: 7.5px 0; }
+    section .block_photo .product .product_item:not(:nth-child(4n+1)) {
+      margin-left: 17.5px; }
+    section .our_team .team_leader {
+      width: 247px;
+      height: 352.5px; }
+    section .our_team .team {
+      margin-left: 56px; }
+      section .our_team .team h5 {
+        font-size: 23px;
+        margin-bottom: 25.5px; }
+      section .our_team .team p {
+        font-size: 12.5px;
+        width: 493px;
+        margin-bottom: 33px; }
+      section .our_team .team .social_links {
+        margin-bottom: 48.5px; }
+        section .our_team .team .social_links ul li {
+          font-size: 14px;
+          margin-right: 23px; }
+      section .our_team .team .team_photo {
+        width: 654.5px; }
+        section .our_team .team .team_photo .team_person {
+          width: 151.5px;
+          height: 161.5px; }
+          section .our_team .team .team_photo .team_person .name_person {
+            height: 27.5px;
+            width: 151.5px;
+            font-size: 14px;
+            line-height: 27.5px; }
+    section .subscribe {
+      padding: 27px 44.5px; }
+      section .subscribe h2 {
+        font-size: 32.5px;
+        margin-bottom: 25.5px; }
+      section .subscribe p {
+        font-size: 12.5px;
+        margin-bottom: 46px; }
+      section .subscribe .subscribe_grup input {
+        height: 8.5px;
+        width: 345.5px;
+        border-radius: 4px;
+        font-size: 12.5px;
+        padding: 26px 27.5px;
+        margin-right: 17px; }
+      section .subscribe .subscribe_grup button {
+        width: 165px;
+        height: 61px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 1.5px solid #ff3f40; }
+    section .block_contact h3 {
+      margin-bottom: 38.5px; }
+    section .block_contact p {
+      width: 563px;
+      margin-bottom: 40px; }
+    section .block_contact hr {
+      margin-bottom: 59.5px; }
+    section .contact_form form {
+      width: 563px;
+      margin-right: 81.5px; }
+      section .contact_form form .contact_form_row input {
+        font-size: 12.5px;
+        width: 182.5px;
+        height: 11.5px;
+        border-radius: 7.5px;
+        margin-bottom: 35.5px;
+        padding: 21px 39.5px; }
+      section .contact_form form textarea {
+        height: 138px;
+        width: 490.5px;
+        font-size: 12.5px;
+        border-radius: 7.5px;
+        padding: 27px 36px;
+        margin-bottom: 34.5px; }
+      section .contact_form form button {
+        font-size: 14px;
+        border-radius: 4px;
+        width: 560.5px;
+        height: 54px; }
+    section .contact_form .contact_info {
+      width: 444.5px; }
+      section .contact_form .contact_info .contact_info_group {
+        width: 219.5px;
+        padding: 110px 110px 0 60px;
+        height: 263.5px; }
+        section .contact_form .contact_info .contact_info_group h6 {
+          font-size: 14px;
+          margin-bottom: 31px; }
+        section .contact_form .contact_info .contact_info_group li {
+          font-size: 12.5px;
+          margin-bottom: 21.5px; }
+
+  section:nth-child(2) {
+    padding-top: 171px; }
+
+  section:nth-child(3) hr {
+    height: 1.5px;
+    width: 960px;
+    margin: 81px auto 0 auto; }
+
+  section:nth-child(5) {
+    padding: 27px 12.5px; }
+
+  footer {
+    padding: 35.5px 0 23px 0; }
+    footer .copyright {
+      line-height: 27px;
+      font-size: 12.5px; }
+    footer .grup_social a {
+      margin-left: 14px; }
+      footer .grup_social a i {
+        font-size: 14.5px;
+        height: 25.5px;
+        width: 25.5px;
+        line-height: 25.5px; } }
 
 /*# sourceMappingURL=main.css.map */
