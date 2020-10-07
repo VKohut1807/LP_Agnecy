@@ -1525,3 +1525,258 @@ footer{
         }
     }
 }
+
+@media only screen and (min-device-width : 640px) and (max-device-width : 959px){
+
+    .wrap{
+        width: 554px;
+    }
+    
+    .two_columns{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header{
+        left: calc(50% - 277px);
+    
+        ul{
+            width: 100%;
+            margin-left: 0px;
+
+            li{
+                padding: 33.5px 36.72px;
+            }
+        }
+    }
+
+    section{
+
+        .block{
+            text-align: center;
+
+            h1{
+                width: 100%;
+                font-size: 55px;
+                text-align: center;
+            }
+    
+            h2{
+                width: 100%;
+                text-align: center;
+            }
+    
+            p{
+                width: 505px;
+                text-align: center;
+                margin: 0 auto 56px auto;
+            }
+    
+            button{
+                margin-bottom: 56px;
+            }
+
+            .our_video {
+                margin-left: 0px;
+                width: 100%;
+            }
+    
+            .block_grup{
+                width: 100%;
+                margin-left: 0px;
+    
+                .block_element{
+                    margin-left: 0px;
+                    margin-bottom: 52px;
+
+                    .element_icon{
+                        float: left;
+                        font-size: 24px;
+                        margin-bottom: 0px;
+                        line-height: 24px;
+                    }
+    
+                    h4{
+                        position: relative;
+                        left: 10px;
+                        top: 0;
+                        height: 24px;
+                        text-align: left;
+                    }
+    
+                    p{
+                        text-align: left;
+                        max-width: 245px;
+                    }
+                }
+            }
+        }
+
+        .block_with_line{
+
+            p{
+                width: 505px;
+            }
+        }
+        
+        .block_photo{
+    
+            .products_photo{
+                float: left;
+                display: block;
+                width: 130px;
+    
+                li{
+                    margin: 0 0 58px 0;
+                }
+            }
+    
+            .product{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                float: right;
+                width: 414px;
+
+                .product_item{
+                    width: 195px;
+                    height: 195px;
+                    margin: 6px;
+                }
+    
+                .product_item:not(:nth-child(4n+1)){
+                    margin-left: 6px;
+                }
+            }
+        }
+
+        .our_team{
+            display: block;
+
+            .team_leader{
+                float: right;
+                width: 200px;
+                height: 200px;
+            }
+    
+            .team{
+                margin-left: 0px;
+                width: 100%;
+                
+                p{
+                    width: 340px;
+                }
+    
+                .social_links{
+                    margin-bottom: 63px;
+                }
+    
+                .team_photo{
+                    width: 100%;
+
+                    .team_person{
+                        width: 130px;
+                        height: 150px;
+
+                        .name_person{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .subscribe{
+            padding: 35px 0;
+            margin: 0 auto;
+    
+            .subscribe_grup{
+    
+                input{
+                    width: 310px;
+                }
+    
+                button{
+                    width: 149px;
+                }
+            }       
+        }
+    
+        .contact_form{
+            display: flex;
+            flex-direction: column;
+    
+            form{
+                width: 100%;
+                margin-right: 0px;
+            
+                .contact_form_row{
+                    width: 100%;
+
+                    input{
+                        padding: 27px 15px;
+                    }
+                }
+    
+                textarea{
+                    width: calc(100% - 94px);
+                }
+    
+                button{
+                    width: 100%;
+                }
+            }
+    
+            .contact_info{
+                position: relative;
+                background-color: $colWhite;
+                margin-top: 0px;
+                width: 100%;
+    
+                .contact_info_group{
+                    padding: 78px 0 0 0;
+                    height: 100%;
+
+                    h6{
+                        color: $colBlack;
+                    }
+    
+                    li{
+                        opacity: .9;
+    
+                        a{
+                            color: $colBlack;
+                        }
+                    } 
+                }         
+            }
+        }
+    }
+
+    section:nth-child(3){
+        padding-bottom: 0;
+    
+        hr{
+            height: 2px;
+            width: 554px;
+            margin: 105px auto 0 auto;
+            background-color: $colGrey;
+        }
+    }
+
+    footer{
+
+        .copyright{
+            order: 2;
+        }
+    
+        .grup_social{
+            order: 1;
+            margin: 0 auto 28px auto;
+            
+            a{
+                margin: 0 18px 0 0;
+            }
+        }
+    }
+}

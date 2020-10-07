@@ -951,5 +951,150 @@ footer {
     margin: 0 auto 28px auto; }
     footer .grup_social a {
       margin: 0 18px 0 0; } }
+@media only screen and (min-device-width: 640px) and (max-device-width: 959px) {
+  .wrap {
+    width: 554px; }
+
+  .two_columns {
+    display: flex;
+    flex-direction: column; }
+
+  header {
+    left: calc(50% - 277px); }
+    header ul {
+      width: 100%;
+      margin-left: 0px; }
+      header ul li {
+        padding: 33.5px 36.72px; }
+
+  section .block {
+    text-align: center; }
+    section .block h1 {
+      width: 100%;
+      font-size: 55px;
+      text-align: center; }
+    section .block h2 {
+      width: 100%;
+      text-align: center; }
+    section .block p {
+      width: 505px;
+      text-align: center;
+      margin: 0 auto 56px auto; }
+    section .block button {
+      margin-bottom: 56px; }
+    section .block .our_video {
+      margin-left: 0px;
+      width: 100%; }
+    section .block .block_grup {
+      width: 100%;
+      margin-left: 0px; }
+      section .block .block_grup .block_element {
+        margin-left: 0px;
+        margin-bottom: 52px; }
+        section .block .block_grup .block_element .element_icon {
+          float: left;
+          font-size: 24px;
+          margin-bottom: 0px;
+          line-height: 24px; }
+        section .block .block_grup .block_element h4 {
+          position: relative;
+          left: 10px;
+          top: 0;
+          height: 24px;
+          text-align: left; }
+        section .block .block_grup .block_element p {
+          text-align: left;
+          max-width: 245px; }
+  section .block_with_line p {
+    width: 505px; }
+  section .block_photo .products_photo {
+    float: left;
+    display: block;
+    width: 130px; }
+    section .block_photo .products_photo li {
+      margin: 0 0 58px 0; }
+  section .block_photo .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    float: right;
+    width: 414px; }
+    section .block_photo .product .product_item {
+      width: 195px;
+      height: 195px;
+      margin: 6px; }
+    section .block_photo .product .product_item:not(:nth-child(4n+1)) {
+      margin-left: 6px; }
+  section .our_team {
+    display: block; }
+    section .our_team .team_leader {
+      float: right;
+      width: 200px;
+      height: 200px; }
+    section .our_team .team {
+      margin-left: 0px;
+      width: 100%; }
+      section .our_team .team p {
+        width: 340px; }
+      section .our_team .team .social_links {
+        margin-bottom: 63px; }
+      section .our_team .team .team_photo {
+        width: 100%; }
+        section .our_team .team .team_photo .team_person {
+          width: 130px;
+          height: 150px; }
+          section .our_team .team .team_photo .team_person .name_person {
+            width: 100%; }
+  section .subscribe {
+    padding: 35px 0;
+    margin: 0 auto; }
+    section .subscribe .subscribe_grup input {
+      width: 310px; }
+    section .subscribe .subscribe_grup button {
+      width: 149px; }
+  section .contact_form {
+    display: flex;
+    flex-direction: column; }
+    section .contact_form form {
+      width: 100%;
+      margin-right: 0px; }
+      section .contact_form form .contact_form_row {
+        width: 100%; }
+        section .contact_form form .contact_form_row input {
+          padding: 27px 15px; }
+      section .contact_form form textarea {
+        width: calc(100% - 94px); }
+      section .contact_form form button {
+        width: 100%; }
+    section .contact_form .contact_info {
+      position: relative;
+      background-color: #fff;
+      margin-top: 0px;
+      width: 100%; }
+      section .contact_form .contact_info .contact_info_group {
+        padding: 78px 0 0 0;
+        height: 100%; }
+        section .contact_form .contact_info .contact_info_group h6 {
+          color: #000; }
+        section .contact_form .contact_info .contact_info_group li {
+          opacity: .9; }
+          section .contact_form .contact_info .contact_info_group li a {
+            color: #000; }
+
+  section:nth-child(3) {
+    padding-bottom: 0; }
+    section:nth-child(3) hr {
+      height: 2px;
+      width: 554px;
+      margin: 105px auto 0 auto;
+      background-color: #f6f2f1; }
+
+  footer .copyright {
+    order: 2; }
+  footer .grup_social {
+    order: 1;
+    margin: 0 auto 28px auto; }
+    footer .grup_social a {
+      margin: 0 18px 0 0; } }
 
 /*# sourceMappingURL=main.css.map */
