@@ -68,6 +68,94 @@ header{
             transition: 0.5s;
         }
     }
+
+    .menu_burger {
+        display: none;
+
+        .burger_button {
+            transition: 0.4s;
+        }
+
+        .burger_lines,
+        .burger_lines::after,
+        .burger_lines::before {
+            position: absolute;
+            width: 2em;
+            top: calc(50%);
+            left: calc(50% - 1em);
+            height: 0.33em;
+            background-color: $colSpecial;
+            transition: 0.4s;
+        }
+
+        .burger_lines::before {
+            content: "";
+            top: -12px;
+            left: 0%;
+        }
+
+        .burger_lines::after {
+            content: "";
+            top: 12px;
+            left: 0%;
+        }
+
+        .menu_burger_navigate {
+            position: fixed;
+            display: flex;
+            flex-flow: column;
+            background-color: $colDark;
+            overflow-y: auto;
+            width: 200px;
+            top: 120px;
+            right: -100%;
+            transition: 0.5s;
+            z-index: 100;
+
+            .burger_link{
+                display: flex;
+                justify-content: center;
+                color: $colWhite;
+                padding: 33.5px 24px;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.7;
+                cursor: pointer;
+            }
+
+            .header_active,
+            a:hover,
+            a:focus,
+            a:active{
+                background-color: $colSpecial;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .menu_burger_action{
+        .burger_button,
+        .burger_lines {
+            background-color: transparent;
+        }
+
+        .burger_lines::before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+
+        .burger_lines::after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        .menu_burger_navigate {
+            transition: 0.5s;
+            top: 120px;
+            right: 0;
+        }
+    }
 }
 
 section{
@@ -1768,6 +1856,281 @@ footer{
 
         .copyright{
             order: 2;
+        }
+    
+        .grup_social{
+            order: 1;
+            margin: 0 auto 28px auto;
+            
+            a{
+                margin: 0 18px 0 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width : 480px) and (max-device-width : 639px){
+
+    .wrap{
+        width: 416px;
+    }
+    
+    .two_columns{
+        display: flex;
+        flex-direction: column;
+    }    
+    
+    header{
+        left: inherit;
+        right: 0;
+        width: 200px;
+    
+        .menu{
+            display: none;
+        }
+
+        .menu_burger{
+            display: block;
+        }
+    }
+
+    section{
+
+        .block{
+            text-align: center;
+
+            h1{
+                width: 100%;
+                font-size: 38px;
+                text-align: center;
+            }
+    
+            h2{
+                font-size: 30px;
+                width: 100%;
+                text-align: center;
+            }
+    
+            p{
+                width: 100%;
+                text-align: center;
+                margin: 0 auto 56px auto;
+            }
+    
+            button{
+                margin-bottom: 56px;
+            }
+
+            .our_video {
+                margin-left: 0px;
+                width: 100%;
+            }
+    
+            .block_grup{
+                width: 100%;
+                margin-left: 0px;
+                justify-content: center;
+    
+                .block_element{
+                    margin-left: 0px;
+                    margin-bottom: 52px;
+
+                    .element_icon{
+                        float: left;
+                        font-size: 24px;
+                        margin-bottom: 0px;
+                        line-height: 24px;
+                    }
+    
+                    h4{
+                        position: relative;
+                        left: 10px;
+                        top: 0;
+                        height: 24px;
+                        text-align: left;
+                    }
+    
+                    p{
+                        text-align: left;
+                        max-width: 245px;
+                    }
+                }
+
+                .block_element:nth-child(3), .block_element:nth-child(4) {
+                    margin-bottom: 52px;
+                }
+            }
+        }
+
+        .block_with_line{
+
+            h3{
+                font-size: 30px;
+            }
+
+            p{
+                width: 100%;
+            }
+        }
+        
+        .block_photo{
+            display: flex;
+            justify-content: space-between;
+    
+            .products_photo{
+                float: left;
+                display: block;
+                width: 130px;
+    
+                li{
+                    margin: 0 0 58px 0;
+                }
+            }
+    
+            .product{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                float: right;
+                width: 100%;
+                max-height: 414px;
+                overflow-x: scroll;
+
+                .product_item{
+                    width: 195px;
+                    height: 195px;
+                    margin: 6px;
+                }
+    
+                .product_item:not(:nth-child(4n+1)){
+                    margin-left: 6px;
+                }
+            }
+        }
+
+        .our_team{
+            display: block;
+
+            .team_leader{
+                float: right;
+                width: 185px;
+                height: 185px;
+            }
+    
+            .team{
+                margin-left: 0px;
+                width: 100%;
+                
+                p{
+                    width: 100%;
+                }
+    
+                .social_links{
+                    margin-bottom: 63px;
+                }
+    
+                .team_photo{
+                    width: 100%;
+
+                    .team_person{
+                        width: 100px;
+                        height: 120px;
+
+                        .name_person{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .subscribe{
+            padding: 35px 0;
+            margin: 0 auto;
+    
+            .subscribe_grup{
+                display: block;
+    
+                input{
+                    width: 310px;
+                    margin-bottom: 33px;
+                }
+    
+                button{
+                    width: 149px;
+                }
+            }       
+        }
+    
+        .contact_form{
+            display: flex;
+            flex-direction: column;
+    
+            form{
+                width: 100%;
+                margin-right: 0px;
+            
+                .contact_form_row{
+                    display: block;
+                    width: 100%;
+
+                    input{
+                        width: calc(100% - 30px);
+                        padding: 27px 15px;
+                    }
+                }
+    
+                textarea{
+                    width: calc(100% - 94px);
+                }
+    
+                button{
+                    width: 100%;
+                }
+            }
+    
+            .contact_info{
+                position: relative;
+                background-color: $colWhite;
+                margin-top: 0px;
+                width: 100%;
+    
+                .contact_info_group{
+                    padding: 78px 0 0 0;
+                    height: 100%;
+
+                    h6{
+                        color: $colBlack;
+                    }
+    
+                    li{
+                        opacity: .9;
+    
+                        a{
+                            color: $colBlack;
+                        }
+                    } 
+                }         
+            }
+        }
+    }
+
+    section:nth-child(3){
+        padding-bottom: 0;
+    
+        hr{
+            height: 2px;
+            width: 416px;
+            margin: 105px auto 0 auto;
+            background-color: $colGrey;
+        }
+    }
+
+    footer{
+
+        .copyright{
+            order: 2;
+            line-height: normal;
         }
     
         .grup_social{
