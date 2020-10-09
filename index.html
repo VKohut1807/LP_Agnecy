@@ -13,10 +13,12 @@
     <script src="code/scroll.js" defer></script>
     <script src="code/filter.js" defer></script>
     <script src="code/team.js" defer></script>
+    <script src="code/burger_menu.js" defer></script>
 </head>
 <body>
-    <header class="wrap">
-        <nav>
+    <header>
+        <div class="wrap">
+        <nav class="menu">
             <ul>
                 <li class="header_active"><a onclick="slowScroll('#Home')">Home</a></li>
                 <li><a onclick="slowScroll('#Portfolio')">Portfolio</a></li>
@@ -24,6 +26,18 @@
                 <li><a onclick="slowScroll('#Contact')">Contact</a></li>
             </ul>
         </nav>
+        <div class="menu_burger">
+            <a class="burger_button">
+                <span class="burger_lines"></span>
+            </a>
+            <nav class="menu_burger_navigate">
+                <a class="header_active burger_link" onclick="slowScroll('#Home')">Home</a>
+                <a class="burger_link" onclick="slowScroll('#Portfolio')">Portfolio</a>
+                <a class="burger_link" onclick="slowScroll('#About')">About Us</a>
+                <a class="burger_link" onclick="slowScroll('#Contact')">Contact</a>
+            </nav>
+        </div>
+        </div>
     </header>
 
     <section id="Home">
